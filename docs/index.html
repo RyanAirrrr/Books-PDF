@@ -1,20 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PDF Links</title>
+  <title>PDF Downloads</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 50px;
       background-color: #f4f4f4;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
     }
+
+    .container {
+      max-width: 500px;
+      width: 100%;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 24px;
+      color: #333;
+    }
+
     .button {
-      display: inline-block;
-      margin: 10px;
-      padding: 15px 25px;
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 15px;
       font-size: 16px;
       background-color: #3498db;
       color: white;
@@ -24,17 +42,27 @@
       text-decoration: none;
       transition: background-color 0.3s;
     }
+
     .button:hover {
       background-color: #2980b9;
     }
   </style>
 </head>
 <body>
-  <h1>PDF Downloads</h1>
-  
-  <a href="applied-statistics-and-probability-for-engineers.pdf" class="button" target="_blank">Statistics & Stochastics Book</a>
-  <a href="Transport Phenomena van den Akker-1-2.pdf" class="button" target="_blank">Physical Transport Phenomena Chapters 1 & 2</a>
-  <a href="Transport Phenomena van den Akker-3-5.pdf" class="button" target="_blank">Physical Transport Phenomena Chapters 3, 4 & 5</a>
+  <div class="container">
+    <h1>PDF Downloads</h1>
 
+    <a href="applied-statistics-and-probability-for-engineers.pdf" class="button" target="_blank">
+      Statistics & Stochastics Book
+    </a>
+    
+    <a href="Transport Phenomena van den Akker-1-2.pdf" class="button" target="_blank">
+      Physical Transport Phenomena Chapters 1 & 2
+    </a>
+    
+    <a href="Transport Phenomena van den Akker-3-5.pdf" class="button" target="_blank">
+      Physical Transport Phenomena Chapters 3, 4 & 5
+    </a>
+  </div>
 </body>
 </html>
