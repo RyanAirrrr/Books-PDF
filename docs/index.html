@@ -12,7 +12,6 @@
       box-sizing: border-box;
     }
 
-
     .navbar {
       position: fixed;
       top: 0;
@@ -21,6 +20,7 @@
       padding: 15px 30px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       z-index: 1000;
+      display: flex;
       justify-content: space-between;
       align-items: center;
     }
@@ -28,7 +28,7 @@
     .navbar h1 {
       color: white;
       margin: 0;
-      font-size: 30px;
+      font-size: 26px;
     }
 
     .nav-links {
@@ -49,24 +49,37 @@
 
     .container {
       width: 100%;
-      max-width: 500px;
+      max-width: 600px;
       background: white;
-      padding: 30px;
+      padding: 40px 30px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      margin: auto;
+      margin: 0 auto 40px auto;
     }
 
     h2 {
       margin-top: 40px;
-      font-size: 20px;
+      font-size: 22px;
       color: #333;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-top: 25px;
+      color: #2c3e50;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    p {
+      margin: 6px 0;
+      font-size: 15px;
     }
 
     .button {
       display: inline-block;
-      margin: 10px 0;
+      margin: 10px auto;
       padding: 12px 20px;
       font-size: 15px;
       background-color: #3498db;
@@ -77,14 +90,16 @@
       text-decoration: none;
       transition: background-color 0.3s;
       max-width: 90%;
+      width: auto;
     }
+
 
     .button:hover {
       background-color: #2980b9;
     }
 
     .section {
-      margin-top: 30px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -101,39 +116,51 @@
 
   <div class="container">
 
+    <!-- Deadlines Section -->
     <div class="section">
       <h2 id="deadlines">Deadlines</h2>
-      <p>No deadlines added yet.</p>
-      <!-- Or you can list some with bullets or dates later -->
+
+      <h3>Statistics & Stochastics</h3>
+      <p> Assignment 1: <strong>May 23</strong></p>
+      <p> Assignment 2: <strong>June 13</strong></p>
+      <p> Final Exam: <strong>June 20 at 15:00</strong></p>
+
+      <h3>Physical Transport Phenomena</h3>
+      <p> No deadlines listed yet.</p>
+
+      <h3>Industrial Marketing</h3>
+      <p> Assignment 1: <strong>May 14 at 9:00</strong></p>
+      <p> Assignment 2: <strong>June 2 at 15:00</strong></p>
+      <p> Final Exam: <strong>June 16 at 11:45</strong></p>
     </div>
 
-    <h2 id="books">PDF Downloads</h2>
+    <!-- PDF Downloads Section -->
+    <div class="section">
+      <h2 id="books">PDF Downloads</h2>
 
-    <!-- First block -->
-    <a href="applied-statistics-and-probability-for-engineers.pdf" class="button" target="_blank">
-      Statistics & Stochastics Book
-    </a><br>
+      <a href="applied-statistics-and-probability-for-engineers.pdf" class="button" target="_blank">
+        Statistics & Stochastics Book
+      </a>
+      <a href="Transport Phenomena van den Akker-1-2.pdf" class="button" target="_blank">
+        Physical Transport Phenomena Chapters 1 & 2
+      </a>
+      <a href="Transport Phenomena van den Akker-3-5.pdf" class="button" target="_blank">
+        Physical Transport Phenomena Chapters 3, 4 & 5
+      </a>
+      <a href="B2B.CVM.2025.1.pdf" class="button" target="_blank">
+        Industrial Marketing Book
+      </a>
+    </div>
 
-    <a href="Transport Phenomena van den Akker-1-2.pdf" class="button" target="_blank">
-      Physical Transport Phenomena Chapters 1 & 2
-    </a><br>
-
-    <a href="Transport Phenomena van den Akker-3-5.pdf" class="button" target="_blank">
-      Physical Transport Phenomena Chapters 3, 4 & 5
-    </a><br>
-
-    <a href="B2B.CVM.2025.1.pdf" class="button" target="_blank">
-      Industrial Marketing Book
-    </a>
-
-    <!-- Second block -->
+    <!-- Useful Links Section -->
     <div class="section">
       <h2 id="links">Useful Links</h2>
-      <a href="example-4.pdf" class="button" target="_blank">PDF 4</a><br>
-      <a href="example-5.pdf" class="button" target="_blank">PDF 5</a><br>
+
+      <a href="example-4.pdf" class="button" target="_blank">PDF 4</a>
+      <a href="example-5.pdf" class="button" target="_blank">PDF 5</a>
       <a href="example-6.pdf" class="button" target="_blank">PDF 6</a>
     </div>
-  </div>
 
+  </div>
 </body>
 </html>
